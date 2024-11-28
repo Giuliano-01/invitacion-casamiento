@@ -39,11 +39,10 @@ export const LetterContainer = styled.div`
         z-index: 900;
         width: fit-content;
         height: fit-content;
+        top:52%;
     `
         export const HeartContainer = styled.div`
             cursor: pointer;
-            width: 100px;
-            height: 100px;
             position: relative;
             margin: 0 20px ;
             animation: pulse 1s infinite alternate ease-in-out;
@@ -54,24 +53,24 @@ export const LetterContainer = styled.div`
             }
         `
         export const HeartSquare = styled.div`
-            width: 10vw;
-            height: 10vw;
+            width: 70px;
+            height: 70px;
             background: #c70000;
             position: absolute;
         `
         export const HeartCircle1 = styled.div`
-            width: 10vw;
-            height: 10vw;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             background: #c70000;
             position: absolute;
-            top: 5vw;
+            top: 30px;
         `
         export const HeartCircle2 = styled.div`
-            width: 10vw;
-            height: 10vw;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             background: #c70000;
             position: absolute;
-            left: 5vw;
+            left: 30px;
         `

@@ -1,13 +1,27 @@
-import  { useState } from 'react'
-import './../style.css'
-import './styles.scss'
+import  { useEffect, useState } from 'react'
 import letterTop from './../lettertop.png'
-import { HeartAbsoluteContainer, HeartButton, HeartCircle1, HeartCircle2, HeartContainer, HeartSquare, LetterBottomContainer, LetterContainer, LetterTopContainer } from './styles'
+import { HeartAbsoluteContainer, HeartCircle1, HeartCircle2, HeartContainer, HeartSquare, LetterBottomContainer, LetterContainer, LetterTopContainer } from './styles'
 
 const LetterIntro = () => {
 
   const [isLetterOpen, setIsLetterOpen] = useState(false)
-    
+  const [isAnimationEnd, setIsAnimationEnd] = useState(false)
+
+  const handleClick = ()=>{
+    setIsLetterOpen(true);
+    document.body.addEventListener('webkitAnimationEnd', ()=>setIsAnimationEnd(true), false);
+    document.body.addEventListener('animationend', ()=>setIsAnimationEnd(true), false);
+    document.body.classList.add('love');
+  }
+
+  useEffect(() => {
+    document.body.classList.remove('love');
+  }, [isAnimationEnd])
+  
+  if(isAnimationEnd){
+    return (<></>)
+  }
+  
   return (
     <LetterContainer isLetterOpen={isLetterOpen}>
 
@@ -18,9 +32,8 @@ const LetterIntro = () => {
       <LetterBottomContainer>
       </LetterBottomContainer>
         
-
       <HeartAbsoluteContainer>
-        <HeartContainer onClick={()=>setIsLetterOpen(true)}>
+        <HeartContainer onClick={()=>handleClick()}>
           <HeartSquare></HeartSquare>
           <HeartCircle1></HeartCircle1>
           <HeartCircle2></HeartCircle2>
