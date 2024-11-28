@@ -33,4 +33,45 @@ export const LetterContainer = styled.div`
         top: 0vh;
         z-index: 250;
     `
-    
+
+    export const HeartAbsoluteContainer = styled.div`
+        position: absolute;
+        z-index: 900;
+        width: fit-content;
+        height: fit-content;
+    `
+        export const HeartContainer = styled.div`
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin: 0 20px ;
+            animation: pulse 1s infinite alternate ease-in-out;
+            margin: 0 auto;
+            @keyframes pulse {
+                0%   {transform: scale(.9) rotate(-135deg);}
+                100% {transform: scale(1.1) rotate(-135deg);}
+            }
+        `
+        export const HeartSquare = styled.div`
+            width: 10vw;
+            height: 10vw;
+            background: #c70000;
+            position: absolute;
+        `
+        export const HeartCircle1 = styled.div`
+            width: 10vw;
+            height: 10vw;
+            border-radius: 50%;
+            background: #c70000;
+            position: absolute;
+            top: 5vw;
+        `
+        export const HeartCircle2 = styled.div`
+            width: 10vw;
+            height: 10vw;
+            border-radius: 50%;
+            background: #c70000;
+            position: absolute;
+            left: 5vw;
+        `
