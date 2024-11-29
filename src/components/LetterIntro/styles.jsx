@@ -13,6 +13,7 @@ export const LetterContainer = styled.div`
     transition: opacity 3s ease;
     ${({isLetterOpen})=>isLetterOpen && "opacity: 0;"}
     z-index: 800;
+    top: 0;
 `
 
     export const LetterTopContainer = styled.div`

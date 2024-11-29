@@ -1,15 +1,16 @@
 import  { useEffect, useState } from 'react'
 import letterTop from './../lettertop.png'
 import { HeartAbsoluteContainer, HeartCircle1, HeartCircle2, HeartContainer, HeartSquare, LetterBottomContainer, LetterContainer, LetterTopContainer } from './styles'
+import { useToggleLetter } from '../../hooks/useIsLetterOpen'
 
 const LetterIntro = () => {
 
-  const [isLetterOpen, setIsLetterOpen] = useState(false)
+  const { isLetterOpen, toggleLetterOpen} = useToggleLetter()
   const [isAnimationEnd, setIsAnimationEnd] = useState(false)
 
   const handleClick = ()=>{
     const app = document.getElementById('App')
-    setIsLetterOpen(true);
+    toggleLetterOpen(true);
     app.addEventListener('webkitAnimationEnd', ()=>setIsAnimationEnd(true), false);
     app.addEventListener('animationend', ()=>setIsAnimationEnd(true), false);
     app.classList.add('love');
