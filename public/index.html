@@ -42,22 +42,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      let button = document.querySelectorAll('.fa')[0];
-let body   = document.querySelectorAll('body')[0];
-
-button.addEventListener('click', activateLove, false);
-
-body.addEventListener('webkitAnimationEnd', disableLove, false);
-body.addEventListener('animationend', disableLove, false);
-
-function activateLove() {
-	body.classList.add('love');
-}
-
-function disableLove() {
-  body.classList.remove('love');
-}
-    </script>
   </body>
 </html>

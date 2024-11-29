@@ -16,19 +16,27 @@ export const TarjetaInvitacionContainer = styled.div`
         color: #ddc190;
     `
     export const SliderContainer = styled.section`
+        position: relative;
         width: 90%;
         height: calc(90% - 75px);
         overflow: hidden;
         border-radius: 15px;
     `
         export const ImageContainer = styled.div`
+            position: absolute;
             height: 100%;
             overflow: hidden;
             display: flex;
             justify-content: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 1s ease;
+            ${({active})=> active && "opacity: 1;"}
         `
         export const TextContainer = styled.div`
-            height: 60px; 
-            width: 60px;
-            border: 1px solid red;
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
         `

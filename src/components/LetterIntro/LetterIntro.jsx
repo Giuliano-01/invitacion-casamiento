@@ -8,14 +8,19 @@ const LetterIntro = () => {
   const [isAnimationEnd, setIsAnimationEnd] = useState(false)
 
   const handleClick = ()=>{
+    const app = document.getElementById('App')
     setIsLetterOpen(true);
-    document.body.addEventListener('webkitAnimationEnd', ()=>setIsAnimationEnd(true), false);
-    document.body.addEventListener('animationend', ()=>setIsAnimationEnd(true), false);
-    document.body.classList.add('love');
+    app.addEventListener('webkitAnimationEnd', ()=>setIsAnimationEnd(true), false);
+    app.addEventListener('animationend', ()=>setIsAnimationEnd(true), false);
+    app.classList.add('love');
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    }
   }
 
   useEffect(() => {
-    document.body.classList.remove('love');
+    const app = document.getElementById('App')
+    app.classList.remove('love');
   }, [isAnimationEnd])
   
   if(isAnimationEnd){

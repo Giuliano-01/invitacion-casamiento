@@ -10,8 +10,9 @@ export const LetterContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: opacity 1.5s ease;
+    transition: opacity 3s ease;
     ${({isLetterOpen})=>isLetterOpen && "opacity: 0;"}
+    z-index: 800;
 `
 
     export const LetterTopContainer = styled.div`

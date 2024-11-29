@@ -5,7 +5,7 @@ import './components/LetterIntro/styles.scss'
 function App() {
   
   return (
-    <div className="App">
+    <div className="App" id='App' style={{position: "relative"}}>
       <LetterIntro/>
       <TarjetaInvitacion/>
     </div>
