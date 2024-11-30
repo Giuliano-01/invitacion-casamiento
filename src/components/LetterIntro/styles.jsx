@@ -41,6 +41,7 @@ export const LetterContainer = styled.div`
         z-index: 900;
         width: fit-content;
         height: fit-content;
+        transform: rotate(-135deg);
         top:52%;
     `
         export const HeartContainer = styled.div`

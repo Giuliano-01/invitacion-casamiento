@@ -1,7 +1,9 @@
 import { TarjetaInvitacionContainer } from './styles'
 
 import TarjetaInvitacionPage1 from './page1/TarjetaInvitacionPage1'
-import TarjetaInvitacionPage2 from './components/TarjetaInvitacionPage2'
+import TarjetaInvitacionPage2 from './page2/TarjetaInvitacionPage2'
+import TarjetaInvitacionPage3 from './page3/TarjetaInvitacionPage3'
+import TarjetaInvitacionPage4 from './page4/TarjetaInvitacionPage4'
 
 const TarjetaInvitacion = () => {
   
@@ -9,8 +11,9 @@ const TarjetaInvitacion = () => {
     <TarjetaInvitacionContainer>
       
       <TarjetaInvitacionPage1/>
-
       <TarjetaInvitacionPage2/>
+      <TarjetaInvitacionPage3/>
+      <TarjetaInvitacionPage4/>
 
     </TarjetaInvitacionContainer>
   )
