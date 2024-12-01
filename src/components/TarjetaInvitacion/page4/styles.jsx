@@ -3,11 +3,15 @@ import styled from "styled-components";
 export const TarjetaInvitacionPage2Container = styled.div`
     width: 100vw;
     height: 100vh;
+    padding-bottom: 50px;
     background-color: white;
     display: none;
     align-items: center;
     flex-direction: column;
     ${({isLetterOpen})=>isLetterOpen && "display: flex;"}
+    @media screen and (max-height: 500px) and (max-width: 700px){
+        height: 200vh;
+    }
 `
         export const Paragraph = styled.p`
             font-size: 15px;
@@ -80,8 +84,20 @@ export const TarjetaInvitacionPage2Container = styled.div`
         color: white;
         font-family: "Old Standard TT", serif;
         width: 100%;
-        height: fit-content;
+        height: 50%;
         background-color: #ddc190;
+        @media screen and (min-width: 700px){
+            height: 100%;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-height: 650px) and (max-width: 700px){
+            border-bottom: none;
+            margin: auto auto;
+            height: 50%;
+        }
     ` 
         export const TitleH2Asistencia = styled.h2`
             font-size: 35px;
@@ -107,4 +123,12 @@ export const TarjetaInvitacionPage2Container = styled.div`
             border-radius: 40px;
             font-size: 14px;
             font-weight: 600;
+        `
+        export const RegalosContainer = styled.div`
+            background-color: white;
+            width: 80%;
+            margin: auto auto;
+            max-width: 600px;
+            color: #6c757d;
+            border-radius: 30px;
         `

@@ -3,11 +3,18 @@ import styled from "styled-components";
 export const TarjetaInvitacionPage2Container = styled.div`
     width: 100vw;
     height: 100vh;
+    padding-bottom: 50px;
     background-color: white;
     display: none;
     align-items: center;
     flex-direction: column;
     ${({isLetterOpen})=>isLetterOpen && "display: flex;"}
+    @media screen and (min-width: 700px){
+        flex-direction: row;
+    }
+    @media screen and (max-height: 500px) and (max-width: 700px){
+        height: 200vh;
+    }
 `
         export const Paragraph = styled.p`
             font-size: 15px;
@@ -77,9 +84,23 @@ export const TarjetaInvitacionPage2Container = styled.div`
 
 
     export const ChuchDateContainer = styled.div`
+        width: 100%;
+        height: 50%;
         margin: 20px 40px;
         color: #6c757d;
         font-family: "Old Standard TT", serif;
+        @media screen and (min-width: 700px){
+            height: 100%;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-height: 650px) and (max-width: 700px){
+            border-bottom: none;
+            margin: auto auto;
+            height: 50%;
+        }
     ` 
         export const TitleH2Items = styled.h2`
             font-size: 45px;

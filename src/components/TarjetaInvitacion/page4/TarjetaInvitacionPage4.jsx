@@ -1,6 +1,7 @@
 import { useToggleLetter } from '../../../hooks/useIsLetterOpen'
-import { AnchorMaps, ChuchDateContainer, TarjetaInvitacionPage2Container, TitleH2Asistencia } from './styles'
-
+import ChevronDown from '../components/ChevronDown'
+import { AnchorMaps, ChuchDateContainer, RegalosContainer, TarjetaInvitacionPage2Container, TitleH2Asistencia } from './styles'
+import plantasImg from './plantas.jpg'
 const TarjetaInvitacionPage4 = () => {
 
   const { isLetterOpen } = useToggleLetter()
@@ -16,18 +17,16 @@ const TarjetaInvitacionPage4 = () => {
             </AnchorMaps>            
           </section>
       </ChuchDateContainer>
-      <ChuchDateContainer>
-        <section style={{backgroundImage: "url('images/gifts.jpg')"}}>
-          <div>
-            <h2>Regalos</h2>                
+      <ChuchDateContainer style={{backgroundImage: `url(${plantasImg})`}}>
+          <RegalosContainer>
+            <TitleH2Asistencia>Regalos</TitleH2Asistencia>                
             <p>
               Tu presencia es lo más importante para nosotros.
               <br/>
               Si además deseas hacernos un regalo, puedes ayudarnos con nuestra luna de miel
             </p>
-            <button class="modal-button" href="#myModal1">Más información</button>                            
-          </div>
-        </section>
+            <h3>ALIAS: caroarmel</h3>                            
+          </RegalosContainer>
       </ChuchDateContainer>
     </TarjetaInvitacionPage2Container>
   )

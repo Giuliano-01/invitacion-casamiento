@@ -372,22 +372,27 @@ html,
   &::before {
     display: block;
     position: absolute;
-    top: 40%;
+    top: 40vh;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all ease-out .6s;
-    color: $red-5;
+    color: #fc1100;
     font-size: 100em;
     opacity: 0;
     animation: ease-out .8s;
     content: '\2764';
+    z-index: 1;
   }
   
   &.love::before {
     animation-name: love;
   }
 }
-
+.remove{
+  &::before{
+    z-index: 0;
+  }
+}
 main {
   position: relative;
 }
@@ -398,11 +403,15 @@ main {
     transform: translate(-50%, -50%) scale(0);
   }
   
-  10% {
+  5% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(.1);
   }
   
+  80% {
+    opacity: 1;
+  }
+
   100% {
     opacity: 0;
     transform: translate(-50%, -50%) scale(1);

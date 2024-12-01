@@ -3,26 +3,41 @@ import styled from "styled-components";
 export const TarjetaInvitacionPage1Container = styled.section`
     width: 100vw;
     height: 100vh;
+    padding-bottom: 50px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 `
     export const HeaderContainer = styled.header`
         width: 100%;
-        height: 75px;
-        font-family: "Parisienne", cursive;
-        font-weight: 400;
-        font-style: normal;
-        color: #ddc190;
-        font-size: 20px;
+        height: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: "Parisienne", cursive;
+        font-weight: 400;
+        font-size: 25px;
+        font-style: normal;
+        color: #ddc190;
+        br{
+            display: none;
+        }
+        @media screen and (max-width: 400px){
+            font-size: 20px;
+        }
+        @media screen and (max-width: 260px){
+            height: 20%;
+            line-height: 25px;
+            br{
+                display: flex;
+            }
+        }
     `
     export const SliderContainer = styled.section`
-        position: relative;
         width: 90%;
-        height: calc(90% - 75px);
+        height: 80%;
+        position: relative;
         overflow: hidden;
         border-radius: 15px;
     `
@@ -45,7 +60,19 @@ export const TarjetaInvitacionPage1Container = styled.section`
             width: 100%;
             font-family: "Old Standard TT", serif;
             font-weight: 400;
-            font-size: 23px;
+            font-size: 30px;
             color: white;
             text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+            @media screen and (max-width: 400px){
+                font-size: 25px;
+            }
+            @media screen and (max-width: 260px){
+                line-height: 30px;
+                br{
+                    display: flex;
+                }
+            }
         `
+    export const ChevronContainer = styled.div`
+        height: 10%;
+    `
