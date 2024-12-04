@@ -107,7 +107,7 @@ export const Titles2Container = styled.div`
     font-family: "Old Standard TT", serif;
     color: #6c757d;
     width: 100%;
-    height: 60%;
+    max-height: 60%;
     @media screen and (min-width: 700px){
         display: flex;
         flex-direction: column;

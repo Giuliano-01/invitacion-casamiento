@@ -21,7 +21,7 @@ export const SectionStyled = styled.section`
 
 export const PageSectionStyled = styled.section`
     width: 100vw;
-    height: 100vh;
+    height: ${({fitContent})=>fitContent ? 'fit-content' : '100vh'};
     padding-bottom: 50px;
     background-color: white;
     display: none;
@@ -32,6 +32,6 @@ export const PageSectionStyled = styled.section`
         flex-direction: row;
     }
     @media screen and (max-height: 500px) and (max-width: 700px){
-        height: 200vh;
+        height: ${({fitContent})=>fitContent ? '100vh' : '200vh'};
     }
 `

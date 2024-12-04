@@ -12,8 +12,8 @@ const TarjetaInvitacion = () => {
       
       <TarjetaInvitacionPage1/>
       <TarjetaInvitacionPage2/>
-      {/* <TarjetaInvitacionPage3/>
-      <TarjetaInvitacionPage4/> */}
+      <TarjetaInvitacionPage3/>
+      <TarjetaInvitacionPage4/>
 
     </TarjetaInvitacionContainer>
   )

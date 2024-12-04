@@ -2,13 +2,13 @@ import { useToggleLetter } from '../../../hooks/useIsLetterOpen'
 import ChevronDown from '../components/ChevronDown'
 import { AnchorMaps, ChuchDateContainer, RegalosContainer, TarjetaInvitacionPage2Container, TitleH2Asistencia } from './styles'
 import plantasImg from './plantas.jpg'
+import Section from '../components/Layouts/Section'
+import PageSection from '../components/Layouts/PageSection'
 const TarjetaInvitacionPage4 = () => {
 
-  const { isLetterOpen } = useToggleLetter()
-
   return (
-    <TarjetaInvitacionPage2Container isLetterOpen={isLetterOpen}>
-      <ChuchDateContainer>
+    <PageSection>
+      <Section>
           <section style={{margin: "20px 40px"}}>
             <TitleH2Asistencia>Confirmación de Asistencia</TitleH2Asistencia>
             <p>Esperamos contar con tu presencia, no olvides confirmar</p>
@@ -16,8 +16,8 @@ const TarjetaInvitacionPage4 = () => {
               <p style={{color: "#ddc190"}}>Confirmar Asistencia</p>
             </AnchorMaps>            
           </section>
-      </ChuchDateContainer>
-      <ChuchDateContainer style={{backgroundImage: `url(${plantasImg})`}}>
+      </Section>
+      <Section style={{backgroundImage: `url(${plantasImg})`}}>
           <RegalosContainer>
             <TitleH2Asistencia>Regalos</TitleH2Asistencia>                
             <p>
@@ -27,8 +27,8 @@ const TarjetaInvitacionPage4 = () => {
             </p>
             <h3>ALIAS: caroarmel</h3>                            
           </RegalosContainer>
-      </ChuchDateContainer>
-    </TarjetaInvitacionPage2Container>
+      </Section>
+    </PageSection>
   )
 }
 
