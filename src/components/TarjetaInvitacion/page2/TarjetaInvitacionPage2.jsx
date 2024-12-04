@@ -4,6 +4,7 @@ import { generateGoogleCalendarLink, getCountdownDistance } from './utils'
 import AnchorBtn from '../components/Buttons/AnchorBtn'
 import Section from '../components/Layouts/Section'
 import PageSection from '../components/Layouts/PageSection'
+import SeparatorImg from './separatos.png'
 
 const TarjetaInvitacionPage2 = () => {
 
@@ -54,6 +55,7 @@ const TarjetaInvitacionPage2 = () => {
             Agendar fecha
           </AnchorBtn>
         </Anchor1Container>
+      <img style={{marginTop: "20px", width: "100%", maxWidth: "max-width: 300px"}} src={SeparatorImg}/>
       </Section>
     </PageSection>
   )

@@ -26,10 +26,12 @@ export const PageSectionStyled = styled.section`
     background-color: white;
     display: none;
     align-items: center;
+    ${({fitContent})=>fitContent && 'justify-content: center'};
     flex-direction: column;
     ${({isLetterOpen})=>isLetterOpen && "display: flex;"}
     @media screen and (min-width: 700px){
         flex-direction: row;
+        height: ${({fitContent})=>fitContent && '100vh'};
     }
     @media screen and (max-height: 500px) and (max-width: 700px){
         height: ${({fitContent})=>fitContent ? '100vh' : '200vh'};
