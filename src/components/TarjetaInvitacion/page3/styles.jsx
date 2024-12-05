@@ -1,133 +1,61 @@
 import styled from "styled-components";
 
-export const TarjetaInvitacionPage2Container = styled.div`
-    width: 100vw;
-    height: 100vh;
-    padding-bottom: 50px;
-    background-color: white;
-    display: none;
-    align-items: center;
-    flex-direction: column;
-    ${({isLetterOpen})=>isLetterOpen && "display: flex;"}
-    @media screen and (min-width: 700px){
-        flex-direction: row;
-    }
-    @media screen and (max-height: 500px) and (max-width: 700px){
-        height: 200vh;
-    }
+export const SvgContainer = styled.svg`
+    width: 40%;
+    max-width: 150px;
+    height: 30%;
+    margin: 20px 20px;
 `
-        export const Paragraph = styled.p`
-            font-size: 15px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 5px;
-            color: #ddc190;
-        `
-        export const TitleH2 = styled.h2`
-            font-size: 45px;
-            font-weight: 200;
-            font-family: "Parisienne", cursive;
-            font-weight: 400;
-            font-style: normal;
-            margin-bottom: 0;
-            color: #6c757d;
-        `
 
-        export const DateUl = styled.ul`
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        `
-            export const DateItem = styled.li`
-                display: inline-block;
-                font-size: 1em;
-                list-style-type: none;
-                padding: 1em;
-                text-transform: uppercase;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                color: #ddc190;
-            `
-            export const DateSpan = styled.span`
-                display: block;
-                font-size: 2.5rem;
-            `
-            export const DateSeparator = styled.span`
-                font-size: 2em;
-                margin-bottom: 5%;
-                color: #ddc190;
-            `
-            export const AnchorCalendar = styled.a`
-                display: flex!important;
-                justify-content: center;
-                align-items: center;
-                gap:8%;
-                max-width: 250px;
-                margin: auto auto;
-                animation: pulse 1s infinite alternate ease-in-out;
-                border: 1px outset #ddc190;
-                text-transform: uppercase;
-                text-decoration: none;
-                color: #666;
-                padding: 10px 32px;
-                border-radius: 40px;
-                font-size: 14px;
-                font-weight: 600;
-                @keyframes pulse {
-                    0%   {transform: scale(.9);}
-                    100% {transform: scale(1);}
-                }
-            `
-
-
-    export const ChuchDateContainer = styled.div`
-        width: 100%;
-        height: 50%;
-        margin: 20px 40px;
-        color: #6c757d;
-        font-family: "Old Standard TT", serif;
-        @media screen and (min-width: 700px){
-            height: 100%;
-        }
+export const CardTextContainer = styled.div`
+    font-family: "Old Standard TT", serif;
+    color: #6c757d;
+    width: 100%;
+    max-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 20px;
+    @media screen and (min-width: 700px){
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        @media screen and (max-height: 650px) and (max-width: 700px){
-            border-bottom: none;
-            margin: auto auto;
-            height: 50%;
+        gap: 20%;
+    }
+`
+
+    export const CardTitleH2 = styled.h2`
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 30px;
+        margin: 0!important;
+        @media screen and (min-width: 400px){
+            font-size: 35px;
+            line-height: 35px;
         }
-    ` 
-        export const TitleH2Items = styled.h2`
-            font-size: 45px;
-            font-weight: 200;
-            font-family: "Old Standard TT", serif;
-            font-style: normal;
-            margin-bottom: 0;
-            margin-top: 20px;
-        `
-        export const AnchorMaps = styled.a`
-            display: flex!important;
-            justify-content: center;
-            align-items: center;
-            max-width: 200px;
-            max-height: 50px;
-            margin: auto auto;
-            animation: pulse 1s infinite alternate ease-in-out;
-            border: 1px outset #ddc190;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #666;
-            padding: 10px 32px;
-            border-radius: 40px;
-            font-size: 14px;
-            font-weight: 600;
-            @keyframes pulse {
-                0%   {transform: scale(.9);}
-                100% {transform: scale(1);}
-            }
-        `
+    `
+    export const CardParagraph = styled.p`
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 15px;
+        margin: 0!important;
+        @media screen and (min-width: 330px){
+            font-size: 18px;
+            line-height: 20px;
+        }
+        @media screen and (min-width: 408px){
+            font-size: 22px;
+            line-height: 25px;
+        }
+    `
+export const CardAnchorContainer = styled.div`
+    width: 100%; 
+    height: fit-content; 
+    margin: 5px 0!important;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 240px){
+        height: 50%;
+    }
+`

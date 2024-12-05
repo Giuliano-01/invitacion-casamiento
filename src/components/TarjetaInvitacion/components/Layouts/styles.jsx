@@ -22,7 +22,7 @@ export const SectionStyled = styled.section`
 export const PageSectionStyled = styled.section`
     width: 100vw;
     height: ${({fitContent})=>fitContent ? 'fit-content' : '100vh'};
-    padding-bottom: 50px;
+    padding-bottom: ${({fitContent})=>fitContent ? '0px' : '50px'};
     background-color: white;
     display: none;
     align-items: center;
@@ -31,9 +31,11 @@ export const PageSectionStyled = styled.section`
     ${({isLetterOpen})=>isLetterOpen && "display: flex;"}
     @media screen and (min-width: 700px){
         flex-direction: row;
-        height: ${({fitContent})=>fitContent && '100vh'};
+        height: ${({fitContent})=>fitContent && 'fit-content'};
+        padding-top: ${({fitContent})=>fitContent && '40px'};
+
     }
     @media screen and (max-height: 500px) and (max-width: 700px){
-        height: ${({fitContent})=>fitContent ? '100vh' : '200vh'};
+        height: ${({fitContent, triple})=>fitContent ? '100vh' : triple ? '150vh' : '200vh'};
     }
 `

@@ -99,10 +99,7 @@ export const Anchor1Container = styled.div`
 `
 
 
-export const SvgContainer = styled.svg`
-    width: 100%;
-    height: 30%;
-`
+
 export const Titles2Container = styled.div`
     font-family: "Old Standard TT", serif;
     color: #6c757d;

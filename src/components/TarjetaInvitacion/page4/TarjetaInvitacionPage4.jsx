@@ -9,13 +9,11 @@ const TarjetaInvitacionPage4 = () => {
   return (
     <PageSection>
       <Section>
-          <section style={{margin: "20px 40px"}}>
-            <TitleH2Asistencia>Confirmación de Asistencia</TitleH2Asistencia>
-            <p>Esperamos contar con tu presencia, no olvides confirmar</p>
-            <AnchorMaps href="https://www.google.com.ar/maps/place/Bassi+12,+B1864IEB+Alejandro+Korn,+Provincia+de+Buenos+Aires/@-34.9849401,-58.3936269,15z/data=!3m1!4b1!4m6!3m5!1s0x95bd2cb25cbd2303:0x850e97844705e58e!8m2!3d-34.9849591!4d-58.3751728!16s%2Fg%2F11gmz79rvg?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank">
-              <p style={{color: "#ddc190"}}>Confirmar Asistencia</p>
-            </AnchorMaps>            
-          </section>
+        <TitleH2Asistencia>Confirmación de Asistencia</TitleH2Asistencia>
+        <p>Esperamos contar con tu presencia, no olvides confirmar</p>
+        <AnchorMaps href="https://www.google.com.ar/maps/place/Bassi+12,+B1864IEB+Alejandro+Korn,+Provincia+de+Buenos+Aires/@-34.9849401,-58.3936269,15z/data=!3m1!4b1!4m6!3m5!1s0x95bd2cb25cbd2303:0x850e97844705e58e!8m2!3d-34.9849591!4d-58.3751728!16s%2Fg%2F11gmz79rvg?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+          <p style={{color: "#ddc190"}}>Confirmar Asistencia</p>
+        </AnchorMaps>            
       </Section>
       <Section style={{backgroundImage: `url(${plantasImg})`}}>
           <RegalosContainer>
