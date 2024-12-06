@@ -55,7 +55,7 @@ const TarjetaInvitacionPage2 = () => {
             Agendar fecha
           </AnchorBtn>
         </Anchor1Container>
-      <img style={{marginTop: "20px", width: "100%", maxWidth: "max-width: 300px"}} src={SeparatorImg}/>
+      <img style={{marginTop: "20px", width: "100%", maxWidth: "400px"}} src={SeparatorImg}/>
       </Section>
     </PageSection>
   )

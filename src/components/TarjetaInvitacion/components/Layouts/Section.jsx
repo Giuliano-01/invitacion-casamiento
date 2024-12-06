@@ -1,8 +1,8 @@
 import { SectionStyled } from './styles'
 
-const Section = ({children}) => {
+const Section = ({children, bgimg}) => {
   return (
-    <SectionStyled>
+    <SectionStyled style={{backgroundImage: `url(${bgimg})`}}>
         {children}
     </SectionStyled>
   )

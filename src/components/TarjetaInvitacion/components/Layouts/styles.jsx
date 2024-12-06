@@ -23,19 +23,18 @@ export const PageSectionStyled = styled.section`
     width: 100vw;
     height: ${({fitContent})=>fitContent ? 'fit-content' : '100vh'};
     padding-bottom: ${({fitContent})=>fitContent ? '0px' : '50px'};
+    padding-top: ${({fitContent})=>fitContent && '40px'};
     background-color: white;
     display: none;
     align-items: center;
     ${({fitContent})=>fitContent && 'justify-content: center'};
     flex-direction: column;
     ${({isLetterOpen})=>isLetterOpen && "display: flex;"}
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 900px){
         flex-direction: row;
         height: ${({fitContent})=>fitContent && 'fit-content'};
-        padding-top: ${({fitContent})=>fitContent && '40px'};
-
     }
     @media screen and (max-height: 500px) and (max-width: 700px){
-        height: ${({fitContent, triple})=>fitContent ? '100vh' : triple ? '150vh' : '200vh'};
+        height: ${({fitContent}) => fitContent ? 'fit-content' : '200vh'};
     }
 `

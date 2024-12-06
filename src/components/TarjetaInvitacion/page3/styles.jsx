@@ -7,10 +7,18 @@ export const SvgContainer = styled.svg`
     margin: 20px 20px;
 `
 
+export const CardContainer = styled.div`
+    background-color: white; 
+    border-radius: 30px; 
+    padding: 10px;
+    @media screen and (max-width: 700px){
+        width: 80%;
+    }
+`
 export const CardTextContainer = styled.div`
     font-family: "Old Standard TT", serif;
     color: #6c757d;
-    width: 100%;
+    max-width: 80%;
     max-height: 60%;
     display: flex;
     flex-direction: column;
@@ -21,7 +29,6 @@ export const CardTextContainer = styled.div`
     @media screen and (min-width: 700px){
         display: flex;
         flex-direction: column;
-        gap: 20%;
     }
 `
 
