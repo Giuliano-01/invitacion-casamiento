@@ -54,6 +54,19 @@ export const TarjetaInvitacionPage1Container = styled.section`
             transition: opacity 1s ease;
             ${({active})=> active && "opacity: 1;"}
         `
+        export const ImageContainerBg = styled.div`
+            position: absolute;
+            overflow: hidden;
+            display: flex;
+            max-height: 100vh;
+            justify-content: center;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 1s ease;
+            ${({active})=> active && "opacity: 1;"}
+        `
         export const TextContainer = styled.div`
             position: absolute;
             bottom: 30px;
