@@ -24,10 +24,6 @@ const TarjetaInvitacionPage1 = () => {
         <h1><>Carolina <br/> & <br/> Marcelo</></h1>
       </HeaderContainer>
 
-      <ImageContainerBg active={Boolean(activeImage === 0)}><img style={{ height: "100%" }} src={Img1} /></ImageContainerBg>
-      <ImageContainerBg active={Boolean(activeImage === 1)}><img style={{ height: "100%" }} src={Img2} /></ImageContainerBg>
-      <ImageContainerBg active={Boolean(activeImage === 2)}><img style={{ height: "100%" }} src={Img3} /></ImageContainerBg>
-
       <SliderContainer>
         <ImageContainer active={Boolean(activeImage === 0)}><img style={{ height: "100%" }} src={Img1} /></ImageContainer>
         <ImageContainer active={Boolean(activeImage === 1)}><img style={{ height: "100%" }} src={Img2} /></ImageContainer>
