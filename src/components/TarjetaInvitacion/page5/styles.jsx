@@ -28,6 +28,11 @@ export const GalleryContainer = styled.div`
         img{
             width: 90%;
             border-radius: 30px;
+            @media screen and (max-height: 500px){
+                position: relative;
+                width: fit-content;
+                height: 150%;
+            }
         }
     `
     export const Backdrop = styled.div`
@@ -41,10 +46,18 @@ export const GalleryContainer = styled.div`
     `
     export const CloseBtn = styled.button`
         position: absolute;
-        width: 50px;
-        height: 50px;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         top: 30px;
-        border-radius: 30px;
-        font-size: 30px;
-        font-weight: bold;
+        border-radius: 1000px;
+        border: none;
+        background-color: transparent;
+        height: 50px;
+        z-index: 100;
+        @media screen and (max-height: 500px){
+            left: 20%;
+        }
     `

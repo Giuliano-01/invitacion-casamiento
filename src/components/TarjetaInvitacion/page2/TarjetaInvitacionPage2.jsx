@@ -9,7 +9,7 @@ import SeparatorImg from './separatos.png'
 const TarjetaInvitacionPage2 = () => {
 
   const [dateLeft, setDateLeft] = useState({ daysLeft: null, hoursLeft: null, minutesLeft: null, secondsLeft: null })
-  const birthday = "01/27/2025";
+  const birthday = "01/11/2025";
   const calendarApiDate = useMemo(() => {
     return generateGoogleCalendarLink(
       "2025-01-11",    // startDate

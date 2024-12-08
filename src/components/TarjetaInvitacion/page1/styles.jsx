@@ -27,6 +27,7 @@ export const TarjetaInvitacionPage1Container = styled.section`
             font-size: 20px;
         }
         @media screen and (max-width: 260px){
+            max-width: 50%;
             height: 20%;
             line-height: 25px;
             br{
@@ -53,6 +54,16 @@ export const TarjetaInvitacionPage1Container = styled.section`
             opacity: 0;
             transition: opacity 1s ease;
             ${({active})=> active && "opacity: 1;"}
+            @media screen and (min-width: 700px){
+                top: 70%;
+                left: 70%;
+                height: 150%;
+            }
+            @media screen and (max-height: 500px){
+                top: 70%;
+                left: 70%;
+                height: 150%;
+            }
         `
         export const ImageContainerBg = styled.div`
             position: absolute;
@@ -73,7 +84,7 @@ export const TarjetaInvitacionPage1Container = styled.section`
             width: 100%;
             font-family: "Old Standard TT", serif;
             font-weight: 400;
-            font-size: 30px;
+            font-size: 35px;
             color: white;
             text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
             @media screen and (max-width: 400px){
@@ -84,6 +95,25 @@ export const TarjetaInvitacionPage1Container = styled.section`
                 br{
                     display: flex;
                 }
+            }
+            @media screen and (min-width: 700px){
+                width: fit-content;
+                font-size: 25px;
+                top: 20%;
+                left: 0%;
+                height: 150%;
+                color: black;
+                text-shadow: 1px 1px 5px rgb(255 255 255);
+            }
+            @media screen and (max-height: 500px){
+                width: fit-content;
+                font-size: 23px;
+                top: 0%;
+                left: 0%;
+                height: 150%;
+                color: black;
+                text-shadow: 1px 1px 5px rgb(255 255 255);
+                max-width: 40%;
             }
         `
     export const ChevronContainer = styled.div`
