@@ -5,9 +5,9 @@ const ToggleLetterContext = createContext();
 
 // Create a provider to manage the state globally
 export const ToggleProvider = ({ children }) => {
-  const [isLetterOpen, setIsLetterOpen] = useState(false);
+  const [isLetterOpen, setisLetterOpen] = useState(false);
 
-  const toggleLetterOpen = () => setIsLetterOpen(prevState => !prevState);
+  const toggleLetterOpen = () => setisLetterOpen(prevState => !prevState);
 
   return (
     <ToggleLetterContext.Provider value={{ isLetterOpen, toggleLetterOpen }}>

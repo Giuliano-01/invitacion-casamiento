@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SectionStyled = styled.section`
+    background-size: cover;
     width: 100%;
     height: 50%;
     padding: 20px 20px;
